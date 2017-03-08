@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('buyerUI');
+  this.route('sellerUI');
 });
 
 export default Router;

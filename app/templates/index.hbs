@@ -1,7 +1,6 @@
 <h1>Online Market Place </h1>
 
-<ul>
-  {{#each model.items as |item|}}
-    {{item.seller}}
-  {{/each}}
-</ul>
+<h2>Who are you?</h2>
+
+{{#link-to "buyerUI"}}<button class="btn-lg">BUYER</button>{{/link-to}}
+{{#link-to "sellerUI"}}<button class="btn-lg">SELLER</button>{{/link-to}}
