@@ -1,0 +1,26 @@
+{
+  "items": [{
+    "seller": "Ken",
+    "price": 100,
+    "product": "Laptop",
+    "description": "three years old",
+    "sold": false,
+    "dateSold": "2017-03-08"
+  },{
+    "seller": "Jeff",
+    "price": 100,
+    "product": "Cup",
+    "description": "new",
+    "sold": false,
+    "dateSold": "2017-03-08"
+  }],
+  "reviews": [{
+    "itemRating": 5,
+    "itemFeedback": "This is good",
+    "timeStamp": "2017-03-09"
+  },{
+    "itemRating": 2,
+    "itemFeedback": "This is bad",
+    "timeStamp": "2017-03-10"
+  }]
+}
