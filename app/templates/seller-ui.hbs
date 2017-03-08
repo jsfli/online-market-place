@@ -12,20 +12,18 @@
     <th>Cup</th>
     <th>10</th>
     <th>2</th>
+    <th>image hardcode</th>
   </tr>
   <tr>
     <th>Bowl</th>
     <th>20</th>
     <th>5</th>
   </tr>
-</table>
-<button>Add New Item</button>
+</table><br>
 
+{{#each model.items as |item|}}
+  {{item.product}}
+{{/each}}
 
-<h3>Ian's Inventory Store </h3>
-<h4>Items</h4>
-<ol>
-  <li>Headphones</li>
-  <li>Jumper</li>
-</ol>
 <button>Add New Item</button>
+{{new-item addNewItem='addNewItem'}}

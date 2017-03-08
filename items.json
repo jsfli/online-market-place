@@ -1,24 +1,24 @@
 {
   "items": [{
-    "seller": "Ken",
     "price": 100,
     "product": "Laptop",
     "description": "three years old",
-    "sold": false,
-    "dateSold": "2017-03-08"
-  },{
-    "seller": "Jeff",
+    "soldout": false,
+    "quantity": 2,
+    "image": "https://static-goldenfrog.netdna-ssl.com/images/vyprvpn/mac/banner_mac.png"
+  }, {
     "price": 100,
     "product": "Cup",
     "description": "new",
-    "sold": false,
-    "dateSold": "2017-03-08"
+    "soldout": false,
+    "quantity": 5,
+    "image": "http://d111vui60acwyt.cloudfront.net/product_photos/3169638/Profile(1)_original.jpg"
   }],
   "reviews": [{
     "itemRating": 5,
     "itemFeedback": "This is good",
     "timeStamp": "2017-03-09"
-  },{
+  }, {
     "itemRating": 2,
     "itemFeedback": "This is bad",
     "timeStamp": "2017-03-10"
