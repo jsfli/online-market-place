@@ -1,29 +1,28 @@
 <h1>Seller</h1>
 
-<h3>Gordon's Goods</h3>
-<h4>Items</h4>
-<table>
-  <tr>
-    <th>Item name</th>
-    <th>Price</th>
-    <th>Quantity</th>
-  </tr>
-  <tr>
-    <th>Cup</th>
-    <th>10</th>
-    <th>2</th>
-    <th>image hardcode</th>
-  </tr>
-  <tr>
-    <th>Bowl</th>
-    <th>20</th>
-    <th>5</th>
-  </tr>
-</table><br>
+  {{item-tile item=item}}
 
-{{#each model.items as |item|}}
-  {{item.product}}
-{{/each}}
+  <h4>Items</h4>
+  <table>
+    <tr>
+      <th>Item name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Image</th>
+      <th>Description</th>
+      <th>Sold Out</th>
+    </tr>
+    {{#each model.items as |item|}}
+    <tr>
+      <th>{{item.product}}</th>
+      <th>{{item.price}}</th>
+      <th>{{item.quantity}}</th>
+      <th><img src={{item.image}}></th>
+      <th>{{item.description}}</th>
+      <th>{{item.soldout}}</th>
+    </tr>
+    {{/each}}
+  </table><br>
 
 <button>Add New Item</button>
 {{new-item addNewItem='addNewItem'}}
