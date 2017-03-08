@@ -1,1 +1,37 @@
 
+  <table>
+    <tr>
+      <th class="colwidth">Item name</th>
+      <th class="colwidth">Price</th>
+      <th class="colwidth">Quantity</th>
+      <th class="colwidth">Image</th>
+      <th class="colwidth">Description</th>
+      <th class="colwidth">Sold Out</th>
+      <th colspan="2">Functions</th>
+    </tr><br>
+    {{#each model.items as |item|}}
+      <tr>
+        <td>{{item.product}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.quantity}}</td>
+        <td><img src= {{item.image}}></td>
+        <td>{{item.description}}</td>
+        <td>{{item.soldout}}</td>
+        <td><button>Edit</button></td>
+        <td><button>Delete</button></td>
+    </tr>
+    {{/each}}
+  </table><br>
+
+
+
+<!-- <tr>
+  <span class="colwidth"><td>{{item.product}}</td></span>
+  <span class="colwidth"><td>{{item.price}}</td></span>
+  <span class="colwidth"><td>{{item.quantity}}</td></span>
+  <span class="colwidth"><td><img src= {{item.image}}></td></span>
+  <span class="colwidth"><td>{{item.description}}</td></span>
+  <span class="colwidth"><td>{{item.soldout}}</td></span>
+  <span class="colwidth"><td><button>Edit</button></td></span>
+  <span class="colwidth"><td><button>Delete</button></td></span>
+</tr> -->

@@ -5,3 +5,7 @@ html {
 img {
   height: 30px;
 }
+
+.colwidth{
+  width: 120px;
+}
