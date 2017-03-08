@@ -2,7 +2,9 @@
 
 
   <h4>Items</h4>
-  {{item-tile model=model}}
+  {{item-tile model=model editItem="editItem"}}
 
 <h3>Add New Item</h3>
 {{new-item addNewItem='addNewItem'}}
+
+{{update-item item=item formIsOpen=model.formIsOpen}}

@@ -17,7 +17,7 @@
         <td><img src= {{item.image}}></td>
         <td>{{item.description}}</td>
         <td>{{item.soldout}}</td>
-        <td><button>Edit</button></td>
+        <td><button {{action 'editItem' item}}>Edit</button></td>
         <td><button>Delete</button></td>
     </tr>
     {{/each}}
