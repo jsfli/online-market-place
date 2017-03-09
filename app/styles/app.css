@@ -2,10 +2,63 @@ html {
   font-family: sans-serif;
 }
 
+.background {
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
+}
+
+.nav-bar-style {
+  list-style: none;
+  background-color: rgba(235, 235, 235, 0.6);
+  margin: 0;
+  border: 1px solid black;
+  padding: 0;
+}
+
+.nav-bar-style li, li div {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.nav-tile {
+  border-radius: 5px;
+  padding: 13px;
+  background-color: #88C225;
+  border: 2px solid white;
+  color: black;
+  width: 125px;
+  height: 50px;
+  font-size: 13px;
+  text-align: center;
+  margin: 0;
+}
+
+#nav-tile-about {
+  background-color: orange;
+  color: white;
+}
+
+.logo-sm {
+  height: 50px;
+}
+
+.logo-lg {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.logo-lg img {
+  height: 150px;
+}
+
+.logo-lg h3 {
+  margin-bottom: 25px;
+}
+
 img {
   height: 30px;
 }
 
-.colwidth{
+.colwidth {
   width: 120px;
 }

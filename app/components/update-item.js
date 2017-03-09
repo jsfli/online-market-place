@@ -9,7 +9,7 @@ export default Ember.Component.extend({
         quantity: this.get('quantity'),
         description: this.get('description'),
         image: this.get('description'),
-      }
+      };
     }
   }
 });
