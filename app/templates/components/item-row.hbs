@@ -1,0 +1,24 @@
+{{#unless formIsOpen}}
+  <tr>
+    <td>{{item.product}}</td>
+    <td>{{item.price}}</td>
+    <td>{{item.quantity}}</td>
+    <td><img src= {{item.image}}></td>
+    <td>{{item.description}}</td>
+    <td>{{item.soldout}}</td>
+    <td><button {{action 'showEditForm'}}>Edit</button></td>
+    <td><button {{action 'deleteItem' item}}>Delete</button></td>
+  </tr>
+{{/unless}}
+{{#if formIsOpen}}
+  <tr class='item'>
+    <td>{{input value=item.product class="product"}}</td>
+    <td>{{input value=item.price class="price"}}</td>
+    <td>{{input value=item.quantity class="quantity"}}</td>
+    <td>{{input value=item.image class="image"}}</td>
+    <td>{{input value=item.description class="description"}}</td>
+    <td>{{input value=item.soldout class="soldout"}}</td>
+    <td><button {{action 'updateItem' item}}>Save</button></td>
+    <td><button {{action 'deleteItem' item}}>Delete</button></td>
+  </tr>
+{{/if}}
